@@ -1,0 +1,74 @@
+/*
+LNK-APP (lnk-app.css) - CSS code for this CapLnk component.
+
+Copyright (C) 2014 by Gregory J Lamoree
+
+This file is part of the LNK-APP component which is part of the
+CapLnk (Component - Application - Link) suite of components. 
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+[unresolved] {
+    display: none;
+}
+:host, .appAll, .appMain, .appAside {
+    box-sizing: border-box;
+    display: block;
+    xwidth: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+}
+:host .appMain {
+    /*width: {{mainWidth}}px;*/
+    float: left;
+    box-sizing: border-box;
+    margin: .25em;
+    margin-top: .5em;
+}
+:host .appAside {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    margin: .25em;
+    margin-top: .5em;
+}
+
+:host .appClear {
+    clear: both;
+} 
+
+:host lnk-media:not([istablet]) ~ .appAll {
+    margin-top: 3.5em !important;
+}
+:host lnk-media[istablet] ~ .appAll {
+    margin-top: 0 !important;
+}
+
+:host lnk-media:not([istablet]) ~ .appMain {
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+:host lnk-media:not([istablet]) ~ .appMenu {
+    margin: 0em;
+}
+:host lnk-media:not([istablet]) ~ .appAll .appAside {
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+
